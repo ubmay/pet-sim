@@ -156,8 +156,11 @@ end)
 local yes = Instance.new('TextLabel', Header)
 yes.Name = 'yes'
 yes.Text = 'H'
-yes.Position = UDim2.new(0, 35, 0, 35)
-yes.Size = Udim2.new(0,35,0, 35)
+yes.Position = UDim2.new(0, 252, 0, 0)
+yes.Size = UDim2.new(0, 35, 0, 35)
+yes.Font = Enum.Font.Highway
+yes.TextColor3 = Color3.fromRGB(255, 0, 0)
+yes.TextSize = 32
 
 local Close = Instance.new('TextButton', Header)
 Close.Name = 'Close'
