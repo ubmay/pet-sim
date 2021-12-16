@@ -108,7 +108,7 @@ HatchRegular.Name = 'HatchRegular'
 HatchRegular.BackgroundColor3 = Color3.fromRGB(45, 45, 205)
 HatchRegular.BorderColor3 = Color3.fromRGB(255, 255, 255)
 HatchRegular.BorderSizePixel = 0
-HatchRegular.Position = UDim2.new(0, 0, 0, 45)
+HatchRegular.Position = UDim2.new(0, 0, 0, 35)
 HatchRegular.Size = UDim2.new(0, 125, 0, 35)
 HatchRegular.Font = Enum.Font.Highway
 HatchRegular.Text = 'Hatch Regular: Off'
@@ -133,7 +133,7 @@ HatchGolden.Name = 'HatchGolden'
 HatchGolden.BackgroundColor3 = Color3.fromRGB(250, 253, 15)
 HatchGolden.BorderColor3 = Color3.fromRGB(255, 255, 255)
 HatchGolden.BorderSizePixel = 0
-HatchGolden.Position = UDim2.new(0, 125, 0, 45)
+HatchGolden.Position = UDim2.new(0, 125, 0, 35)
 HatchGolden.Size = UDim2.new(0, 125, 0, 35)
 HatchGolden.Font = Enum.Font.Highway
 HatchGolden.Text = 'Hatch Golden: Off'
@@ -153,13 +153,13 @@ HatchGolden.MouseButton1Click:connect(function()
 	end
 end)
 
-local yes = Instance.new('TextLabel', Header)
+local yes = Instance.new('TextLabel', Background)
 yes.Name = 'yes'
 yes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes.BackgroundTransparency = 1
 yes.BorderSizePixel = 0
-yes.Position = UDim2.new(0, 0, 0, 25)
-yes.Size = UDim2.new(0, 250, 0, 40)
+yes.Position = UDim2.new(0, 0, 0, 55)
+yes.Size = UDim2.new(0, 125, 0, 35)
 yes.BorderColor3 = Color3.fromRGB(255, 255, 0)
 yes.Font = Enum.Font.Highway
 yes.Text = 'HELLO'
