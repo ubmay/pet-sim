@@ -47,8 +47,8 @@ Hide.MouseButton1Click:connect(function()
 		CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, -250, 0, 10), 'In', 'Back', 0.5)
 		wait(0.5)
 		CoreGui.PetSimulatorX.Header.Hide.Text = '>'
-		CoreGui.PetSimulatorX.Header.Close.BackgroundTransparency = 1
-		CoreGui.PetSimulatorX.Header.Hide.BackgroundTransparency = 1
+		CoreGui.PetSimulatorX.Header.Close.BackgroundTransparency = 0
+		CoreGui.PetSimulatorX.Header.Hide.BackgroundTransparency = 0
 		HideToggle = true
 	else
 		if HideToggle == true then
@@ -72,7 +72,7 @@ TextLabel.Size = UDim2.new(0, 250, 0, 40)
 TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.Font = Enum.Font.Highway
 TextLabel.Text = 'Pet Simulator X Auto Hatch'
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 23
 
 local Notification = Instance.new('Frame', Header)
