@@ -158,13 +158,13 @@ yes.Name = 'yes'
 yes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes.BackgroundTransparency = 1
 yes.BorderSizePixel = 0
-yes.Position = UDim2.new(0, 69, 0, 0)
+yes.Position = UDim2.new(0, 0, 0, 50)
 yes.Size = UDim2.new(0, 250, 0, 40)
 yes.BorderColor3 = Color3.fromRGB(255, 255, 0)
 yes.Font = Enum.Font.Highway
 yes.Text = 'HELLO'
 yes.TextColor3 = Color3.fromRGB(255, 0, 5)
-yes.TextSize = 15
+yes.TextSize = 30
 
 local Close = Instance.new('TextButton', Header)
 Close.Name = 'Close'
