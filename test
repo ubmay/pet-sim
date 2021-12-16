@@ -21,13 +21,18 @@ Header.BorderSizePixel = 0
 Header.Position = UDim2.new(0, -255, 0, 10)
 Header.Size = UDim2.new(0, 250, 0, 40)
 
-local Header2 = Instance.new('Frame', PetSimulatorX)
+local Header2 = Instance.new('TextLabel', PetSimulatorX)
 Header2.Name = 'Header2'
-Header2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Header2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Header2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Header2.BackgroundTransparency = 1
 Header2.BorderSizePixel = 0
-Header2.Position = UDim2.new(0, -255, 0, 25)
-Header2.Size = UDim2.new(0, 250, 0, 5)
+Header2.Position = UDim2.new(0, 0, 0, 30)
+Header2.Size = UDim2.new(0, 250, 0, 40)
+Header2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Header2.Font = Enum.Font.Highway
+Header2.Text = 'Pet Simulator X Auto Hatch'
+Header2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Header2.TextSize = 23
 
 local Frame = Instance.new('Frame', Header)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
