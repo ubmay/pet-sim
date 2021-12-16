@@ -102,8 +102,8 @@ Egg.Font = Enum.Font.Highway
 Egg.Text = 'Titanium'
 Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
 Egg.TextSize = 16
-if Egg.Text == 'hi' then
-Egg.Text = 'Test'
+if Egg.Text == "hi" then
+Egg.Text = "Test"
 end
 local HatchRegular = Instance.new('TextButton', Background)
 HatchRegular.Name = 'HatchRegular'
