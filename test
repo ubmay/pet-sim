@@ -448,6 +448,7 @@ cal First = v:sub(1, 1)
 		Split[i] = First:upper().. Rest:lower()
 	end
 	local Result = table.concat(Split, ' ')
+	local Triple = true
 	if HatchRegularToggle == true then
 		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', Triple})
 	end
