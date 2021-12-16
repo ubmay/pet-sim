@@ -153,7 +153,7 @@ HatchGolden.MouseButton1Click:connect(function()
 	end
 end)
 
-local yes = Instance.new('TextButton', Header)
+local yes = Instance.new('TextLabel', Header)
 yes.Name = 'yes'
 yes.Text = 'H'
 yes.Position = UDim2.new(0, 35, 0, 35)
@@ -165,7 +165,7 @@ Close.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Close.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0, 252, 0, 0)
-Close.Size = UDim2.new(0, 0, 0, 0)
+Close.Size = UDim2.new(0, 35, 0, 35)
 Close.Font = Enum.Font.Highway
 Close.Text = 'X'
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
