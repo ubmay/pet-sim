@@ -23,7 +23,7 @@ Header.Size = UDim2.new(0, 250, 0, 40)
 
 local Frame = Instance.new('Frame', Header)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, 0, 40)
 Frame.Size = UDim2.new(0, 250, 0, 5)
@@ -74,6 +74,19 @@ TextLabel.Font = Enum.Font.Highway
 TextLabel.Text = 'Pet Simulator X Auto Hatch'
 TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 23
+
+local separation = Instance.new('TextLabel', Header)
+separation.Name = 'separation'
+separation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+separation.BackgroundTransparency = 1
+separation.BorderSizePixel = 0
+separation.Position = UDim2.new(0, 0, 0, 20)
+separation.Size = UDim2.new(0, 250, 0, 40)
+separation.BorderColor3 = Color3.fromRGB(255, 255, 255)
+separation.Font = Enum.Font.Highway
+separation.Text = '-'
+separation.TextColor3 = Color3.fromRGB(255, 255, 255)
+separation.TextSize = 23
 
 local Notification = Instance.new('Frame', Header)
 Notification.Name = 'Notification'
