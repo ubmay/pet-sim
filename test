@@ -163,8 +163,8 @@ yes.Size = UDim2.new(0, 125, 0, 35)
 yes.BorderColor3 = Color3.fromRGB(255, 255, 0)
 yes.Font = Enum.Font.Highway
 yes.Text = 'TripleHatch: On'
-yes.TextColor3 = Color3.fromRGB(255, 0, 5)
-yes.TextSize = 30
+yes.TextColor3 = Color3.fromRGB(0, 0, 0)
+yes.TextSize = 16
 
 local TripleToggle = true
 yes.MouseButton1Click:connect(function()
