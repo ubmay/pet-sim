@@ -162,9 +162,23 @@ yes.Position = UDim2.new(0, 62.5, 0, 65)
 yes.Size = UDim2.new(0, 125, 0, 35)
 yes.BorderColor3 = Color3.fromRGB(255, 255, 0)
 yes.Font = Enum.Font.Highway
-yes.Text = 'HELLO'
+yes.Text = 'TripleHatch: On'
 yes.TextColor3 = Color3.fromRGB(255, 0, 5)
 yes.TextSize = 30
+
+local TripleToggle = true
+yes.MouseButton1Click:connect(function()
+	if TripleToggle == true then
+		TripleToggle = false
+		yes.Text = 'Triple Hatch: Off'
+	else
+		if TripleToggle == false then
+			TripleToggle = true
+			yes.Text = 'Triple Hatch: On'
+		end
+	end
+end)
+
 
 local Close = Instance.new('TextButton', Header)
 Close.Name = 'Close'
@@ -448,10 +462,10 @@ while true do
 	end
 	local Result = table.concat(Split, ' ')
 	if HatchRegularToggle == true then
-		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', true})
+		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
 	end
 	if HatchGoldenToggle == true then
-		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({'Golden '.. Result.. ' Egg', true})
+		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({'Golden '.. Result.. ' Egg', TripleToggle})
 	end
 	wait()
 end
