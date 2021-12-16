@@ -15,7 +15,7 @@ PetSimulatorX.ResetOnSpawn = false
 
 local Header = Instance.new('Frame', PetSimulatorX)
 Header.Name = 'Header'
-Header.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+Header.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Header.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Header.BorderSizePixel = 0
 Header.Position = UDim2.new(0, -255, 0, 10)
@@ -94,7 +94,7 @@ Background.Size = UDim2.new(0, 250, 0, 70)
 local Egg = Instance.new('TextBox',Background)
 Egg.Name = "Egg"
 Egg.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-Egg.BorderColor3 = Color3.fromRGB(200, 200, 200)
+Egg.BorderColor3 = Color3.fromRGB(200, 0, 200)
 Egg.BorderSizePixel = 0
 Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
