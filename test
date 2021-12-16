@@ -164,7 +164,7 @@ yes.BorderColor3 = Color3.fromRGB(255, 255, 0)
 yes.Font = Enum.Font.Highway
 yes.Text = 'HELLO'
 yes.TextColor3 = Color3.fromRGB(255, 0, 5)
-yes.TextSize = 35
+yes.TextSize = 15
 
 local Close = Instance.new('TextButton', Header)
 Close.Name = 'Close'
