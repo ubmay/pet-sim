@@ -80,13 +80,13 @@ separation.Name = 'separation'
 separation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 separation.BackgroundTransparency = 1
 separation.BorderSizePixel = 0
-separation.Position = UDim2.new(0, 0, 0, 20)
-separation.Size = UDim2.new(0, 250, 0, 70)
+separation.Position = UDim2.new(0, 0, 0, 30)
+separation.Size = UDim2.new(0, 250, 0, 40)
 separation.BorderColor3 = Color3.fromRGB(255, 255, 255)
 separation.Font = Enum.Font.Highway
 separation.Text = '-'
 separation.TextColor3 = Color3.fromRGB(255, 255, 255)
-separation.TextSize = 25
+separation.TextSize = 40
 
 local Notification = Instance.new('Frame', Header)
 Notification.Name = 'Notification'
