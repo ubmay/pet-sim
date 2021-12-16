@@ -99,12 +99,13 @@ Egg.BorderSizePixel = 0
 Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
 Egg.Font = Enum.Font.Highway
+if Egg.Text == "hi" then wait(0.2)
+Egg.Text = "Test"
+end
 Egg.Text = 'Titanium'
 Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
 Egg.TextSize = 16
-if Egg.Text == "hi" then
-Egg.Text = "Test"
-end
+
 local HatchRegular = Instance.new('TextButton', Background)
 HatchRegular.Name = 'HatchRegular'
 HatchRegular.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
