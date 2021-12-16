@@ -72,7 +72,7 @@ TextLabel.Size = UDim2.new(0, 250, 0, 40)
 TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.Font = Enum.Font.Highway
 TextLabel.Text = 'Pet Simulator X Auto Hatch'
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 23
 
 local Notification = Instance.new('Frame', Header)
@@ -93,10 +93,10 @@ Background.Size = UDim2.new(0, 250, 0, 70)
 
 local Egg = Instance.new('TextBox',Background)
 Egg.Name = "Egg"
-Egg.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Egg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Egg.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Egg.BorderSizePixel = 0
-Egg.Position = UDim2.new(0, 0,0, 0)
+Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
 Egg.Font = Enum.Font.Highway
 Egg.Text = "Titanium"
@@ -105,7 +105,7 @@ Egg.TextSize = 16
 
 local HatchRegular = Instance.new('TextButton', Background)
 HatchRegular.Name = 'HatchRegular'
-HatchRegular.BackgroundColor3 = Color3.fromRGB(45, 45, 205)
+HatchRegular.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 HatchRegular.BorderColor3 = Color3.fromRGB(255, 255, 255)
 HatchRegular.BorderSizePixel = 0
 HatchRegular.Position = UDim2.new(0, 0, 0, 30)
@@ -130,7 +130,7 @@ end)
 
 local HatchGolden = Instance.new('TextButton', Background)
 HatchGolden.Name = 'HatchGolden'
-HatchGolden.BackgroundColor3 = Color3.fromRGB(250, 253, 15)
+HatchGolden.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 HatchGolden.BorderColor3 = Color3.fromRGB(255, 255, 255)
 HatchGolden.BorderSizePixel = 0
 HatchGolden.Position = UDim2.new(0, 125, 0, 30)
@@ -155,7 +155,7 @@ end)
 
 local yes = Instance.new('TextButton', Background)
 yes.Name = 'yes'
-yes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 yes.BackgroundTransparency = 0
 yes.BorderSizePixel = 0
 yes.Position = UDim2.new(0, 0, 0, 65)
