@@ -99,7 +99,7 @@ Egg.BorderSizePixel = 0
 Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
 Egg.Font = Enum.Font.Highway
-if Egg.Text == "" then wait(0.2)
+if Egg.Text == "" then wait
 Egg.Text = "Enter the name of the egg you would like to hatch here!"
 end
 Egg.Text = 'Titanium'
