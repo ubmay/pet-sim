@@ -213,18 +213,6 @@ while true do
 		Split[i] = First:upper().. Rest:lower()
 	end
 	local Result = table.concat(Split, ' ')
-while (wait()) do
-        local validNames = {"Hell", "Titanium", "Haunted"}
-        local eggIsValid = false
-        for i, v in ipairs(validNames) do
-        if Result == v then
-        eggIsValid = true
-        break
-    end
-end
-        if not eggIsValid then
-        Egg.Text = "pls enter vaid option"
-end
 	if HatchRegularToggle == true then
 		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
 	end
