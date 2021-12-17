@@ -219,12 +219,3 @@ while true do
 	end
 	wait()
 end
-
-while (wait(0.1)) do
-if Egg.Text == '' then 
-  Egg.Text = 'Enter the name of the egg you want to hatch here!'
-  Egg.TextColor3 = Color3.fromRGB(45, 45, 45)
-  Egg.TextSize = 10
-  end
-end
-
