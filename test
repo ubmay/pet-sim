@@ -191,7 +191,7 @@ Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0, 252, 0, 0)
 Close.Size = UDim2.new(0, 35, 0, 35)
 Close.Font = Enum.Font.Highway
-Close.Text = '×'
+Close.Text = 'X'
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 28
 
