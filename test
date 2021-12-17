@@ -100,6 +100,8 @@ Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
 Egg.Font = Enum.Font.Highway
 Egg.Text = 'Titanium'
+Egg.PlaceholderText = 'Egg name goes here!'
+Egg.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
 Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
 Egg.TextSize = 16
 
@@ -220,12 +222,14 @@ while true do
 	wait()
 end
 
-Egg.PlaceholderText = 'Egg name goes here!'
-Egg.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
-while (wait()) do
-if Result ~= "Cracked" or Result ~= "Spotted" or Result ~= "Wood" or Result ~= "Grass" or Result ~= "Beachball" or Result ~= "Coconut" or Result ~= "Rock" or Result ~= "Geode" or Result ~= "Magma" or Result ~= "Obsidian" or Result ~= "Spiked" or Result ~= "Cactus" or Result ~= "Yeti" or Result ~= "Icicle" or Result ~= "Ice" or Result ~= "Snow" or Result ~= "Dominus" or Result ~= "Enchanted" or Result ~= "Relic" or Result ~= "Samurai" or Result ~= "Rainbow" or Result ~= "Haunted" or Result ~= "Hell" or Result ~= "Heaven" or Result ~= "Empyrean" or Result ~= "Metal" or Result ~= "Tech" or Result ~= "Titanium" or Result ~= "Dark Tech" or Result ~= "Steampunk" or Result ~= "Mechanical" or Result ~= "Chemical" or Result ~= "Lab" or Result ~= "Alien" or Result ~= "Martian" or Result ~= "Planet" then
-  Egg.Text = "pls enter vaid option"
-  Egg.TextColor3 = Color3.fromRGB(100, 100, 100)
-  end
+local validNames = {"Hell", "Titanium", "Haunted"}
+local eggIsValid = false
+for i, v in ipairs(validNames) do
+    if Result == v then
+        eggIsValid = true
+        break
+    end
 end
-    
+if not eggIsValid then
+    Egg.Text = "pls enter vaid option"
+end
