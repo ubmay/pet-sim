@@ -234,7 +234,7 @@ while wait() do -- wait() delays until the next frame
         end
     end
     if not eggIsValid then
-        Egg.Text = "pls enter vaid option"
+        Egg.TextColor3 = Color3.fromRGB(200, 0, 0)
     end
     
     if HatchRegularToggle == true then
