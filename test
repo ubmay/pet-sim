@@ -204,20 +204,43 @@ end)
 
 CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Back', 0.5)
 
-while true do
-	local Word = Egg.Text
-	local Split = string.split(Word, ' ')
-	for i, v in pairs(Split) do
-		local First = v:sub(1, 1)
-		local Rest = v:sub(2)
-		Split[i] = First:upper().. Rest:lower()
-	end
-	local Result = table.concat(Split, ' ')
-	if HatchRegularToggle == true then
-		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
-	end
-	if HatchGoldenToggle == true then
-		game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({'Golden '.. Result.. ' Egg', TripleToggle})
-	end
-	wait()
+while wait() do -- wait() delays until the next frame
+    -- so it's better to use wait() than wait(0.2)
+    -- unless you want specific timing
+    -- ok so first do the check
+    if Egg.Text == '' then
+      Egg.TextSize = 20 -- the text size when its empty
+    else
+      Egg.TextSize = 16 -- the normal text size
+    end
+    -- You can change 20 and 16 to your own values
+    
+    -- then do your next part of code
+    local Word = Egg.Text
+    local Split = string.split(Word, ' ')
+    for i, v in pairs(Split) do
+        local First = v:sub(1, 1)
+        local Rest = v:sub(2)
+        Split[i] = First:upper().. Rest:lower()
+    end
+    local Result = table.concat(Split, ' ')
+    
+    local validNames = {"Hell", "Titanium", "Haunted"}
+    local eggIsValid = false
+    for i, v in ipairs(validNames) do
+        if Result == v then
+            eggIsValid = true
+            break
+        end
+    end
+    if not eggIsValid then
+        Egg.Text = "pls enter vaid option"
+    end
+    
+    if HatchRegularToggle == true then
+        game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
+    end
+    if HatchGoldenToggle == true then
+        game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({'Golden '.. Result.. ' Egg', TripleToggle})
+    end
 end
