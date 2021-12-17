@@ -222,8 +222,10 @@ end
 
 Egg.PlaceholderText = 'Egg name goes here!'
 Egg.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
+while (wait()) do
 if Result ~= "Cracked" or Result ~= "Spotted" or Result ~= "Wood" or Result ~= "Grass" or Result ~= "Beachball" or Result ~= "Coconut" or Result ~= "Rock" or Result ~= "Geode" or Result ~= "Magma" or Result ~= "Obsidian" or Result ~= "Spiked" or Result ~= "Cactus" or Result ~= "Yeti" or Result ~= "Icicle" or Result ~= "Ice" or Result ~= "Snow" or Result ~= "Dominus" or Result ~= "Enchanted" or Result ~= "Relic" or Result ~= "Samurai" or Result ~= "Rainbow" or Result ~= "Haunted" or Result ~= "Hell" or Result ~= "Heaven" or Result ~= "Empyrean" or Result ~= "Metal" or Result ~= "Tech" or Result ~= "Titanium" or Result ~= "Dark Tech" or Result ~= "Steampunk" or Result ~= "Mechanical" or Result ~= "Chemical" or Result ~= "Lab" or Result ~= "Alien" or Result ~= "Martian" or Result ~= "Planet" then
   Egg.Text = "pls enter vaid option"
   Egg.TextColor3 = Color3.fromRGB(100, 100, 100)
+  end
 end
     
